@@ -1,5 +1,5 @@
 <?php
-// Sitemap extension, https://github.com/datenstrom/yellow-extensions/tree/master/source/sitemap
+// Sitemap extension, https://github.com/annaesvensson/yellow-sitemap
 
 class YellowSitemap {
     const VERSION = "0.8.12";
