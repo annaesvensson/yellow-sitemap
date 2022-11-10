@@ -2,7 +2,7 @@
 // Sitemap extension, https://github.com/annaesvensson/yellow-sitemap
 
 class YellowSitemap {
-    const VERSION = "0.8.12";
+    const VERSION = "0.8.13";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -40,7 +40,7 @@ class YellowSitemap {
         $output = null;
         if ($name=="header") {
             $locationSitemap = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("sitemapLocation");
-            $locationSitemap .= $this->yellow->toolbox->normaliseArguments("page:".$this->yellow->system->get("sitemapFileXml"), false);
+            $locationSitemap .= $this->yellow->lookup->normaliseArguments("page:".$this->yellow->system->get("sitemapFileXml"), false);
             $output = "<link rel=\"sitemap\" type=\"text/xml\" href=\"$locationSitemap\" />\n";
         }
         return $output;
