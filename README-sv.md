@@ -6,6 +6,10 @@ Webbplatskarta med alla sidor.
 
 <p align="center"><img src="sitemap-screenshot.png?raw=true" alt="Skärmdump"></p>
 
+## Hur man installerar ett tillägg
+
+[Ladda ner ZIP-filen](https://github.com/annaesvensson/yellow-sitemap/archive/main.zip) och kopiera den till din `system/extensions` mapp. [Läs mer om tillägg](https://github.com/annaesvensson/yellow-update/tree/main/README-sv.md).
+
 ## Hur man använder en webbplatskarta 
 
 Webbplatskartan är tillgänglig som `http://website/sitemap/` och `http://website/sitemap/page:sitemap.xml`. Det är en översikt över hela webbplatsen, endast synliga sidor ingår.
@@ -36,10 +40,6 @@ Följande inställningar kan konfigureras i filen `system/extensions/yellow-syst
 Följande filer kan anpassas:
 
 `system/layouts/sitemap.html` = layoutfil för webbplatskarta  
-
-## Installation
-
-[Ladda ner tillägg](https://github.com/annaesvensson/yellow-sitemap/archive/main.zip) och kopiera ZIP-fil till din `system/extensions` mapp. [Läs mer om tillägg](https://github.com/annaesvensson/yellow-update/tree/main/README-sv.md).
 
 ## Utvecklare
 

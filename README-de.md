@@ -6,6 +6,10 @@ Sitemap mit allen Seiten.
 
 <p align="center"><img src="sitemap-screenshot.png?raw=true" alt="Bildschirmfoto"></p>
 
+## Wie man eine Erweiterung installiert
+
+[ZIP-Datei herunterladen](https://github.com/annaesvensson/yellow-sitemap/archive/main.zip) und in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
+
 ## Wie man eine Sitemap benutzt
 
 Die Sitemap ist auf deiner Webseite vorhanden als `http://website/sitemap/` und `http://website/sitemap/page:sitemap.xml`. Es ist eine Übersicht über die gesamte Webseite, nur sichtbare Seiten sind enthalten.
@@ -36,10 +40,6 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 Die folgenden Dateien können angepasst werden:
 
 `system/layouts/sitemap.html` = Layoutdatei für Sitemap  
-
-## Installation
-
-[Erweiterung herunterladen](https://github.com/annaesvensson/yellow-sitemap/archive/main.zip) und die ZIP-Datei in dein `system/extensions`-Verzeichnis kopieren. [Weitere Informationen zu Erweiterungen](https://github.com/annaesvensson/yellow-update/tree/main/README-de.md).
 
 ## Entwickler
 
