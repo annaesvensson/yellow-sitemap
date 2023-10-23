@@ -2,7 +2,7 @@
 // Sitemap extension, https://github.com/annaesvensson/yellow-sitemap
 
 class YellowSitemap {
-    const VERSION = "0.8.13";
+    const VERSION = "0.8.14";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -28,6 +28,10 @@ class YellowSitemap {
                 $output .= "</urlset>\r\n";
                 $this->yellow->page->setOutput($output);
             } else {
+                foreach ($pages as $pageSitemap) {
+                    $sitemapGroup = strtoupperu(substru($pageSitemap->get("title"), 0, 1));
+                    $pageSitemap->set("sitemapGroup", $sitemapGroup);
+                }
                 $pages->sort("title");
                 $this->yellow->page->setPages("sitemap", $pages);
                 $this->yellow->page->setLastModified($pages->getModified());
