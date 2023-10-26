@@ -3,7 +3,7 @@
 <div class="main" role="main">
 <h1><?php echo $this->yellow->page->getHtml("titleContent") ?></h1>
 <?php $pages = $this->yellow->page->getPages("sitemap")->paginate($this->yellow->system->get("sitemapPaginationLimit")) ?>
-<?php foreach ($pages->group("sitemapGroup", true) as $group=>$collection): ?>
+<?php foreach ($pages->group("title", true, "initial") as $group=>$collection): ?>
 <h2><?php echo htmlspecialchars($group) ?></h2>
 <ul>
 <?php foreach ($collection as $page): ?>
