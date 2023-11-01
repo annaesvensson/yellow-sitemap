@@ -14,6 +14,8 @@ Sitemap mit allen Seiten.
 
 Die Sitemap ist auf deiner Webseite vorhanden als `http://website/sitemap/` und `http://website/sitemap/page:sitemap.xml`. Es ist eine Übersicht über die gesamte Webseite, nur sichtbare Seiten sind enthalten.
 
+Falls du nicht willst dass eine Seite in der Sitemap sichtbar ist, kannst du `Status: unlisted` in den [Seiteneinstellungen](https://github.com/annaesvensson/yellow-core/tree/main/README-de.md#einstellungen-seite) ganz oben auf einer Seite festlegen.
+
 ## Beispiele
 
 Inhaltsdatei mit Link zur Sitemap:
@@ -28,6 +30,14 @@ Inhaltsdatei mit Link zur Sitemap:
     in culpa qui officia deserunt mollit anim id est laborum.
     
     [Alle Seiten anzeigen](/sitemap/).
+
+Inhaltsdatei mit ungelisteter Seite:
+
+    ---
+    Title: Ungelistete Seite
+    Status: unlisted
+    ---
+    Diese Seite ist in der Sitemap nicht sichtbar.
 
 ## Einstellungen
 
