@@ -14,7 +14,7 @@ Webbplatskarta med alla sidor.
 
 Webbplatskartan är tillgänglig som `http://website/sitemap/` och `http://website/sitemap/page:sitemap.xml`. Det är en översikt över hela webbplatsen, endast synliga sidor ingår.
 
-Om du inte vill att en sida ska synas i webbplatskartan, ställ in `Status: unlisted` i [sidinställningar](https://github.com/annaesvensson/yellow-core/tree/main/README-sv.md#inställningar-page) högst upp på en sida.
+Om du inte vill att en sida ska synas, ställ in `Status: unlisted` i [sidinställningar](https://github.com/annaesvensson/yellow-core/tree/main/README-sv.md#inställningar-page) högst upp på en sida.
 
 ## Exempel
 
