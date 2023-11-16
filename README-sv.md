@@ -4,7 +4,7 @@
 
 Webbplatskarta med alla sidor.
 
-<p align="center"><img src="sitemap-screenshot.png?raw=true" alt="Skärmdump"></p>
+<p align="center"><img src="SCREENSHOT.png?raw=true" alt="Skärmdump"></p>
 
 ## Hur man installerar ett tillägg
 
