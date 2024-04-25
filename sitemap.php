@@ -2,7 +2,7 @@
 // Sitemap extension, https://github.com/annaesvensson/yellow-sitemap
 
 class YellowSitemap {
-    const VERSION = "0.9.1";
+    const VERSION = "0.9.2";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -16,7 +16,7 @@ class YellowSitemap {
     // Handle page layout
     public function onParsePageLayout($page, $name) {
         if ($name=="sitemap") {
-            $pages = $this->yellow->content->index(false, false);
+            $pages = $this->yellow->content->index();
             if ($this->isRequestXml($page)) {
                 $this->yellow->page->setLastModified($pages->getModified());
                 $this->yellow->page->setHeader("Content-Type", "text/xml; charset=utf-8");
