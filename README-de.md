@@ -12,7 +12,7 @@ Sitemap mit allen Seiten.
 
 ## Wie man eine Sitemap benutzt
 
-Die Sitemap ist auf deiner Webseite vorhanden als `http://website/sitemap/` und `http://website/sitemap/page:sitemap.xml`. Es ist eine Übersicht über die gesamte Webseite, nur sichtbare Seiten sind enthalten.
+Die Sitemap ist auf deiner Webseite vorhanden als `http://website/sitemap/` und `http://website/sitemap/page:sitemap.xml`. Der erste Link ist eine menschenlesbare Sitemap und der zweite Link ist eine maschinenlesbare Sitemap, um Suchmaschinen zu informieren was für die Indexierung zur Verfügung steht. Es ist eine Übersicht über die gesamte Webseite, nur sichtbare Seiten sind enthalten.
 
 Falls du nicht willst dass eine Seite sichtbar ist, kannst du `Status: unlisted` in den [Seiteneinstellungen](https://github.com/annaesvensson/yellow-core/tree/main/README-de.md#einstellungen-seite) ganz oben auf einer Seite festlegen.
 
