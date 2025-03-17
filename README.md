@@ -12,7 +12,7 @@ Sitemap with all pages.
 
 ## How to use a sitemap
 
-The sitemap is available as `http://website/sitemap/` and `http://website/sitemap/page:sitemap.xml`. It's an overview of the entire website, only visible pages are included.
+The sitemap is available as `http://website/sitemap/` and `http://website/sitemap/page:sitemap.xml`. The first link is a human readable sitemap and the second link is a machine readable sitemap, to inform search engines what's available for indexing. It's an overview of the entire website, only visible pages are included.
 
 If you don't want that a page is visible, set `Status: unlisted` in the [page settings](https://github.com/annaesvensson/yellow-core#settings-page) at the top of a page.
 
