@@ -12,7 +12,7 @@ Webbplatskarta med alla sidor.
 
 ## Hur man använder en webbplatskarta 
 
-Webbplatskartan är tillgänglig som `http://website/sitemap/` och `http://website/sitemap/page:sitemap.xml`. Det är en översikt över hela webbplatsen, endast synliga sidor ingår.
+Webbplatskartan är tillgänglig som `http://website/sitemap/` och `http://website/sitemap/page:sitemap.xml`. Den första länken är en mänskligt läsbar webbplatskarta och den andra länken är en maskinläsbar webbplatskarta, för att informera sökmotorer om vad som är tillgängligt för indexering. Det är en översikt över hela webbplatsen, endast synliga sidor ingår.
 
 Om du inte vill att en sida ska synas, ställ in `Status: unlisted` i [sidinställningar](https://github.com/annaesvensson/yellow-core/tree/main/README-sv.md#inställningar-page) högst upp på en sida.
 
