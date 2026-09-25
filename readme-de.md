@@ -1,4 +1,4 @@
-# Sitemap 0.9.3
+# Sitemap 1.0.1
 
 Sitemap mit allen Seiten. Entwickelt von Anna Svensson.
 
