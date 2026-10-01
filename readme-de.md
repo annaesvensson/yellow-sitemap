@@ -1,4 +1,4 @@
-# Sitemap 1.0.1
+# Sitemap 1.0.2
 
 Sitemap mit allen Seiten. Entwickelt von Anna Svensson.
 
@@ -10,7 +10,7 @@ Sitemap mit allen Seiten. Entwickelt von Anna Svensson.
 
 ## Wie man eine Sitemap benutzt
 
-Die Sitemap ist auf deiner Webseite vorhanden als `http://website/sitemap/` und `http://website/sitemap/page:sitemap.xml`. Der erste Link ist eine menschenlesbare Sitemap und der zweite Link ist eine maschinenlesbare Sitemap, um Suchmaschinen zu informieren was für die Indexierung zur Verfügung steht. Es ist eine Übersicht über die gesamte Webseite, nur sichtbare Seiten sind enthalten.
+Die Sitemap ist auf deiner Webseite vorhanden als `http://website/sitemap/` und `http://website/sitemap.xml`. Der erste Link ist eine menschenlesbare Sitemap und der zweite Link ist eine maschinenlesbare Sitemap, um Suchmaschinen zu informieren was für die Indexierung zur Verfügung steht. Es ist eine Übersicht über die gesamte Webseite, nur sichtbare Seiten sind enthalten.
 
 Falls du nicht willst dass eine Seite sichtbar ist, kannst du `Status: unlisted` in den [Seiteneinstellungen](https://github.com/annaesvensson/yellow-core/tree/main/readme-de.md#einstellungen-seite) ganz oben auf einer Seite festlegen.
 
@@ -42,7 +42,7 @@ Inhaltsdatei mit ungelisteter Seite:
 Die folgenden Einstellungen können in der Datei `system/extensions/yellow-system.ini` vorgenommen werden:
 
 `SitemapLocation` = Ort der Sitemap  
-`SitemapFileXml` = Dateiname der Sitemap mit XML-Informationen  
+`SitemapXmlLocation` = Ort der Sitemap als XML-Format  
 `SitemapPaginationLimit` = Anzahl der Einträge pro Seite, 0 für unbegrenzt  
 
 Die folgenden Dateien können angepasst werden:

@@ -1,4 +1,4 @@
-# Sitemap 1.0.1
+# Sitemap 1.0.2
 
 Sitemap with all pages. Developed by Anna Svensson.
 
@@ -10,7 +10,7 @@ Sitemap with all pages. Developed by Anna Svensson.
 
 ## How to use a sitemap
 
-The sitemap is available as `http://website/sitemap/` and `http://website/sitemap/page:sitemap.xml`. The first link is a human readable sitemap and the second link is a machine readable sitemap, to inform search engines what's available for indexing. It's an overview of the entire website, only visible pages are included.
+The sitemap is available as `http://website/sitemap/` and `http://website/sitemap.xml`. The first link is a human readable sitemap and the second link is a machine readable sitemap, to inform search engines what's available for indexing. It's an overview of the entire website, only visible pages are included.
 
 If you don't want that a page is visible, set `Status: unlisted` in the [page settings](https://github.com/annaesvensson/yellow-core#settings-page) at the top of a page.
 
@@ -42,7 +42,7 @@ Content file with unlisted page:
 The following settings can be configured in file `system/extensions/yellow-system.ini`:
 
 `SitemapLocation` = sitemap location  
-`SitemapFileXml` = sitemap file name with XML information  
+`SitemapXmlLocation` = sitemap location as XML format  
 `SitemapPaginationLimit` = number of entries to show per page, 0 for unlimited  
 
 The following files can be customised:

@@ -1,4 +1,4 @@
-# Sitemap 1.0.1
+# Sitemap 1.0.2
 
 Webbplatskarta med alla sidor. Utvecklad av Anna Svensson.
 
@@ -10,7 +10,7 @@ Webbplatskarta med alla sidor. Utvecklad av Anna Svensson.
 
 ## Hur man använder en webbplatskarta 
 
-Webbplatskartan är tillgänglig som `http://website/sitemap/` och `http://website/sitemap/page:sitemap.xml`. Den första länken är en mänskligt läsbar webbplatskarta och den andra länken är en maskinläsbar webbplatskarta, för att informera sökmotorer om vad som är tillgängligt för indexering. Det är en översikt över hela webbplatsen, endast synliga sidor ingår.
+Webbplatskartan är tillgänglig som `http://website/sitemap/` och `http://website/sitemap.xml`. Den första länken är en mänskligt läsbar webbplatskarta och den andra länken är en maskinläsbar webbplatskarta, för att informera sökmotorer om vad som är tillgängligt för indexering. Det är en översikt över hela webbplatsen, endast synliga sidor ingår.
 
 Om du inte vill att en sida ska synas, ställ in `Status: unlisted` i [sidinställningar](https://github.com/annaesvensson/yellow-core/tree/main/readme-sv.md#inställningar-page) högst upp på en sida.
 
@@ -42,7 +42,7 @@ Innehållsfil med olistad sida:
 Följande inställningar kan konfigureras i filen `system/extensions/yellow-system.ini`:
 
 `SitemapLocation` = plats för webbplatskartan  
-`SitemapFileXml` = filnamn för webbplatskartan med XML-information  
+`SitemapXmlLocation` = plats för webbplatskartan som XML format  
 `SitemapPaginationLimit` = antal inlägg att visa per sida, 0 för obegränsad  
 
 Följande filer kan anpassas:
