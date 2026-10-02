@@ -1,4 +1,4 @@
-# Sitemap 1.0.2
+# Sitemap 1.0.3
 
 Sitemap mit allen Seiten. Entwickelt von Anna Svensson.
 
@@ -43,6 +43,7 @@ Die folgenden Einstellungen können in der Datei `system/extensions/yellow-syste
 
 `SitemapLocation` = Ort der Sitemap  
 `SitemapXmlLocation` = Ort der Sitemap als XML-Format  
+`SitemapXmMultiLanguage` = eine maschinenlesbare Sitemap für mehrsprachige Webseiten, 1 oder 0  
 `SitemapPaginationLimit` = Anzahl der Einträge pro Seite, 0 für unbegrenzt  
 
 Die folgenden Dateien können angepasst werden:

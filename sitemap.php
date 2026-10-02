@@ -2,7 +2,7 @@
 // Sitemap extension, https://github.com/annaesvensson/yellow-sitemap
 
 class YellowSitemap {
-    const VERSION = "1.0.2";
+    const VERSION = "1.0.3";
     public $yellow;         // access to API
     
     // Handle initialisation
@@ -10,6 +10,7 @@ class YellowSitemap {
         $this->yellow = $yellow;
         $this->yellow->system->setDefault("sitemapLocation", "/sitemap/");
         $this->yellow->system->setDefault("sitemapXmlLocation", "/sitemap.xml");
+        $this->yellow->system->setDefault("sitemapXmMultiLanguage", "1");
         $this->yellow->system->setDefault("sitemapPaginationLimit", "30");
     }
     
@@ -30,8 +31,8 @@ class YellowSitemap {
     // Handle page layout
     public function onParsePageLayout($page, $name) {
         if ($name=="sitemap") {
-            $pages = $this->yellow->content->index();
             if ($this->isSitemapXmlLocation($page->location, $page->getRequest("page"))) {
+                $pages = $this->indexMultiLanguage(false, $this->yellow->system->get("sitemapXmMultiLanguage"));
                 $page->setLastModified($pages->getModified());
                 $page->setHeader("Content-Type", "text/xml; charset=utf-8");
                 $output = "<?xml version=\"1.0\" encoding=\"utf-8\"\077>\r\n";
@@ -42,6 +43,7 @@ class YellowSitemap {
                 $output .= "</urlset>\r\n";
                 $page->setOutput($output);
             } else {
+                $pages = $this->yellow->content->index();
                 $pages->sort("title");
                 $page->setPages("sitemap", $pages);
                 $page->setLastModified($pages->getModified());
@@ -59,9 +61,21 @@ class YellowSitemap {
         return $output;
     }
     
+    // Return page collection with pages of the website
+    public function indexMultiLanguage($showInvisible = false, $multiLanguage = false) {
+        $rootLocation = $multiLanguage ? "" : $this->yellow->content->getRootLocation($this->yellow->page->location);
+        return $this->yellow->content->getChildrenRecursive($rootLocation, $showInvisible);
+    }
+    
     // Return XML location
     public function getSitemapXmlLocation($location) {
-        return rtrim($this->yellow->content->getHomeLocation($location), "/").$this->yellow->system->get("sitemapXmlLocation");
+        if ($this->yellow->system->get("sitemapXmMultiLanguage")) {
+            $sitemapXmlLocation = $this->yellow->system->get("sitemapXmlLocation");
+        } else {
+            $sitemapXmlLocation = rtrim($this->yellow->content->getHomeLocation($location), "/").
+                $this->yellow->system->get("sitemapXmlLocation");
+        }
+        return $sitemapXmlLocation;
     }
 
     // Check if XML format requested
