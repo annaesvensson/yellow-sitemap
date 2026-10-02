@@ -43,7 +43,7 @@ The following settings can be configured in file `system/extensions/yellow-syste
 
 `SitemapLocation` = sitemap location  
 `SitemapXmlLocation` = sitemap location as XML format  
-`SitemapXmMultiLanguage` = one machine readable sitemap for multi language websites, 1 or 0  
+`SitemapXmlMultiLanguage` = one machine readable sitemap for multi language websites, 1 or 0  
 `SitemapPaginationLimit` = number of entries to show per page, 0 for unlimited  
 
 The following files can be customised:

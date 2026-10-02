@@ -43,7 +43,7 @@ Följande inställningar kan konfigureras i filen `system/extensions/yellow-syst
 
 `SitemapLocation` = plats för webbplatskartan  
 `SitemapXmlLocation` = plats för webbplatskartan som XML format  
-`SitemapXmMultiLanguage` = en maskinläsbar webbplatskarta för flerspråkiga webbplatser, 1 eller 0  
+`SitemapXmlMultiLanguage` = en maskinläsbar webbplatskarta för flerspråkiga webbplatser, 1 eller 0  
 `SitemapPaginationLimit` = antal inlägg att visa per sida, 0 för obegränsad  
 
 Följande filer kan anpassas:

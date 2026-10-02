@@ -10,7 +10,7 @@ class YellowSitemap {
         $this->yellow = $yellow;
         $this->yellow->system->setDefault("sitemapLocation", "/sitemap/");
         $this->yellow->system->setDefault("sitemapXmlLocation", "/sitemap.xml");
-        $this->yellow->system->setDefault("sitemapXmMultiLanguage", "1");
+        $this->yellow->system->setDefault("sitemapXmlMultiLanguage", "1");
         $this->yellow->system->setDefault("sitemapPaginationLimit", "30");
     }
     
@@ -32,7 +32,7 @@ class YellowSitemap {
     public function onParsePageLayout($page, $name) {
         if ($name=="sitemap") {
             if ($this->isSitemapXmlLocation($page->location, $page->getRequest("page"))) {
-                $pages = $this->indexMultiLanguage(false, $this->yellow->system->get("sitemapXmMultiLanguage"));
+                $pages = $this->indexMultiLanguage(false, $this->yellow->system->get("sitemapXmlMultiLanguage"));
                 $page->setLastModified($pages->getModified());
                 $page->setHeader("Content-Type", "text/xml; charset=utf-8");
                 $output = "<?xml version=\"1.0\" encoding=\"utf-8\"\077>\r\n";
@@ -69,7 +69,7 @@ class YellowSitemap {
     
     // Return XML location
     public function getSitemapXmlLocation($location) {
-        if ($this->yellow->system->get("sitemapXmMultiLanguage")) {
+        if ($this->yellow->system->get("sitemapXmlMultiLanguage")) {
             $sitemapXmlLocation = $this->yellow->system->get("sitemapXmlLocation");
         } else {
             $sitemapXmlLocation = rtrim($this->yellow->content->getHomeLocation($location), "/").
